@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InAmigos Foundation</title>
+
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+
+header{
+    background:#2E7D32;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:white;
+}
+
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+
+.btn{
+    display:inline-block;
+    background:#FF6F00;
+    color:white;
+    padding:12px 24px;
+    border-radius:5px;
+    text-decoration:none;
+    margin:5px;
+}
+
+
+section{
+    padding:60px 8%;
+}
+
+
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+    color:#2E7D32;
+}
+
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+
+.impact{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+
+.impact-box{
+    background:#2E7D32;
+    color:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+
+form{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    max-width:600px;
+    margin:auto;
+}
+
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+
+button{
+    background:#FF6F00;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+
+.testimonial{
+    background:white;
+    padding:20px;
+    border-left:5px solid #2E7D32;
+    margin-bottom:15px;
+}
+
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+    <h2>InAmigos Foundation</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#donate">Donate</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#campaigns">Campaigns</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<section class="hero">
+    <h1>Empowering Communities</h1>
+    <p>Together we create positive change through education, healthcare and social impact.</p>
+
+
+    <a href="#donate" class="btn">Donate Now</a>
+    <a href="#volunteer" class="btn">Become a Volunteer</a>
+</section>
+
+
+<section id="about">
+    <h2 class="section-title">About Us</h2>
+    <p style="text-align:center;">
+        Our mission is to support underprivileged communities through education,
+        healthcare, food distribution and social welfare programs.
+    </p>
+</section>
+
+
+<section id="donate">
+    <h2 class="section-title">Donation Section</h2>
+
+
+    <div class="cards">
+        <div class="card">
+            <h3>Education Support</h3>
+            <p>Help provide learning resources to children.</p>
+        </div>
+
+
+        <div class="card">
+            <h3>Healthcare Support</h3>
+            <p>Fund medical camps and healthcare services.</p>
+        </div>
+
+
+        <div class="card">
+            <h3>Food Distribution</h3>
+            <p>Support hunger relief initiatives.</p>
+        </div>
+    </div>
+
+
+    <div style="text-align:center;margin-top:25px;">
+        <a href="#" class="btn">Donate Now</a>
+    </div>
+</section>
+
+
+<section>
+    <h2 class="section-title">Our Impact</h2>
+
+
+    <div class="impact">
+        <div class="impact-box">
+            <h2>5000+</h2>
+            <p>Lives Impacted</p>
+        </div>
+
+
+        <div class="impact-box">
+            <h2>200+</h2>
+            <p>Volunteers</p>
+        </div>
+
+
+        <div class="impact-box">
+            <h2>50+</h2>
+            <p>Villages Reached</p>
+        </div>
+
+
+        <div class="impact-box">
+            <h2>100+</h2>
+            <p>Campaigns Conducted</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="volunteer">
+    <h2 class="section-title">Volunteer Registration</h2>
+
+
+    <form>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+        <input type="tel" placeholder="Phone Number">
+        <input type="text" placeholder="Skills">
+        <textarea rows="4" placeholder="Why do you want to volunteer?"></textarea>
+
+
+        <button type="submit">Join Us</button>
+    </form>
+</section>
+
+
+<section id="campaigns">
+    <h2 class="section-title">Campaigns & Events</h2>
+
+
+    <div class="cards">
+        <div class="card">
+            <h3>Education Drive</h3>
+            <p>Providing school supplies for children.</p>
+        </div>
+
+
+        <div class="card">
+            <h3>Health Camp</h3>
+            <p>Free medical check-ups and awareness programs.</p>
+        </div>
+
+
+        <div class="card">
+            <h3>Food Donation</h3>
+            <p>Distributing meals to needy families.</p>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <h2 class="section-title">Testimonials</h2>
+
+
+    <div class="testimonial">
+        “This NGO changed my life and gave me new opportunities.”
+    </div>
+
+
+    <div class="testimonial">
+        “Wonderful volunteering experience with a meaningful impact.”
+    </div>
+</section>
+
+
+<section id="contact">
+    <h2 class="section-title">Contact & Support</h2>
+
+
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="4" placeholder="Message"></textarea>
+
+
+        <button type="submit">Send Message</button>
+    </form>
+
+
+    <div style="text-align:center;margin-top:20px;">
+        <p>📞 +91 9080831808</p>
+        <p>✉️ jbalajijayavel05@gmail.com</p>
+        <p>📍 Chennai, Tamil Nadu, India</p>
+    </div>
+</section>
+
+
+<footer>
+    <p>© 2026 InAmigos Foundation. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+</html>
